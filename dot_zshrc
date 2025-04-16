@@ -1,0 +1,53 @@
+# XDG Base Directory
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_STATE_HOME="$HOME/.local/state"
+
+export PATH="$PATH:$HOME/.local/bin"
+
+# Oh My Zsh
+export ZSH="$XDG_DATA_HOME/oh-my-zsh"
+
+zstyle ':omz:plugins:ssh-agent' identities GitHub ns310162
+zstyle ':omz:update' mode disabled
+
+VI_MODE_SET_CURSOR=true
+ZSH_CACHE_DIR="$XDG_CACHE_HOME/zsh"
+[ -d "$ZSH_CACHE_DIR" ] || mkdir -p "$ZSH_CACHE_DIR"
+ZSH_COMPDUMP="$ZSH_CACHE_DIR/zcompdump"
+typeset -A ZSH_HIGHLIGHT_STYLES
+ZSH_HIGHLIGHT_STYLES[path]='fg=blue,bold'
+
+plugins=(colored-man-pages fzf grc ssh-agent starship sudo vi-mode web-search zsh-autocomplete zsh-autosuggestions zsh-syntax-highlighting)
+
+source "$ZSH/oh-my-zsh.sh"
+
+# Aliases
+alias ls='eza --classify --group-directories-first --icons=auto'
+alias nvim='nvim -i NONE'
+alias orphans='paru -Qtd'
+alias vi='nvim'
+alias vim='nvim'
+alias wget='wget --no-hsts'
+
+# Go
+export GOPATH="$XDG_DATA_HOME/go"
+export GOMODCACHE="$XDG_CACHE_HOME/go/mod"
+
+# less
+export LESSHISTFILE=/dev/null
+
+# Node.js
+export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
+export PATH="$PATH:$XDG_DATA_HOME/npm/bin"
+
+# Rust
+export CARGO_HOME="$XDG_DATA_HOME/cargo"
+export PATH="$PATH:$CARGO_HOME/bin"
+
+# SQLite
+export SQLITE_HISTORY=/dev/null
+
+# zsh
+unset HISTFILE

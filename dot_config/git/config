@@ -1,0 +1,27 @@
+[commit]
+	gpgsign = true
+[core]
+	pager = delta
+[delta]
+	navigate = true
+[fetch]
+	prune = true
+[gpg]
+	format = ssh
+[init]
+	defaultBranch = main
+[interactive]
+	diffFilter = delta --color-only
+[merge]
+	conflictStyle = zdiff3
+[pull]
+	rebase = true
+[push]
+	autoSetupRemote = true
+[rebase]
+	autoSquash = true
+	autoStash = true
+[user]
+	name = Sizyff
+	email = 182140235+Sizyffe@users.noreply.github.com
+	signingkey = /home/sizyffe/.ssh/GitHub.pub
