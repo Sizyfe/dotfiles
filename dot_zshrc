@@ -9,7 +9,6 @@ export PATH="$PATH:$HOME/.local/bin"
 # Oh My Zsh
 export ZSH="$XDG_DATA_HOME/oh-my-zsh"
 
-zstyle ':omz:plugins:ssh-agent' identities GitHub ns310162
 zstyle ':omz:update' mode disabled
 
 VI_MODE_SET_CURSOR=true
@@ -19,7 +18,7 @@ ZSH_COMPDUMP="$ZSH_CACHE_DIR/zcompdump"
 typeset -A ZSH_HIGHLIGHT_STYLES
 ZSH_HIGHLIGHT_STYLES[path]='fg=blue,bold'
 
-plugins=(colored-man-pages fzf grc ssh-agent starship sudo vi-mode web-search zsh-autocomplete zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(colored-man-pages fzf grc starship sudo vi-mode web-search zsh-autocomplete zsh-autosuggestions zsh-syntax-highlighting)
 
 source "$ZSH/oh-my-zsh.sh"
 
@@ -48,6 +47,9 @@ export PATH="$PATH:$CARGO_HOME/bin"
 
 # SQLite
 export SQLITE_HISTORY=/dev/null
+
+# SSH
+export SSH_AUTH_SOCK="$HOME/.var/app/com.bitwarden.desktop/data/.bitwarden-ssh-agent.sock"
 
 # zsh
 unset HISTFILE
