@@ -22,6 +22,9 @@ plugins=(colored-man-pages fzf grc starship sudo vi-mode web-search zsh-autocomp
 
 source "$ZSH/oh-my-zsh.sh"
 
+bindkey '^I' menu-select
+bindkey "$terminfo[kcbt]" menu-select
+
 # Aliases
 alias ls='eza --classify --group-directories-first --icons=auto'
 alias nvim='nvim -i NONE'
@@ -40,6 +43,9 @@ export LESSHISTFILE=/dev/null
 # Node.js
 export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
 export PATH="$PATH:$XDG_DATA_HOME/npm/bin"
+
+# OpenCL
+export RUSTICL_ENABLE=iris
 
 # Rust
 export CARGO_HOME="$XDG_DATA_HOME/cargo"
