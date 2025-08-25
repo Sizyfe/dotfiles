@@ -1,0 +1,19 @@
+{
+	"editor.tabSize": 2,
+	"window.restoreWindows": "none",
+	"terminal.integrated.defaultProfile.linux": "zsh",
+	"terminal.integrated.profiles.linux": {
+		"zsh": {
+			"path": "/app/bin/host-spawn",
+			"args": ["zsh"],
+			"icon": "terminal-bash",
+			"overrideName": true
+		}
+	},
+	"editor.fontFamily": "'JetBrains Mono', 'Droid Sans Mono', 'monospace', monospace",
+	"editor.fontLigatures": true,
+	"workbench.startupEditor": "none",
+	"workbench.iconTheme": "vscode-icons",
+	"files.insertFinalNewline": true,
+	"editor.renderWhitespace": "boundary"
+}
