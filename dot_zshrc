@@ -9,6 +9,7 @@ export PATH="$PATH:$HOME/.local/bin"
 # Oh My Zsh
 export ZSH="$XDG_DATA_HOME/oh-my-zsh"
 
+zstyle ':chpwd:*' recent-dirs-max 0
 zstyle ':omz:update' mode disabled
 
 VI_MODE_SET_CURSOR=true

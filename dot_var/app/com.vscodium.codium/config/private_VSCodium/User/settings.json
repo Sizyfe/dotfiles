@@ -15,5 +15,16 @@
 	"workbench.startupEditor": "none",
 	"workbench.iconTheme": "vscode-icons",
 	"files.insertFinalNewline": true,
-	"editor.renderWhitespace": "boundary"
+	"editor.renderWhitespace": "boundary",
+	"explorer.confirmDelete": false,
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[scss]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"update.showReleaseNotes": false,
+	"[python]": {
+		"editor.defaultFormatter": "ms-python.autopep8"
+	}
 }
